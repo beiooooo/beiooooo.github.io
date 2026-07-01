@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人技术博客 - 首页</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><a href="index.html">✎ 个人博客</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="blog.html">博客</a></li>
+        <li><a href="about.html">关于</a></li>
+        <li><a href="projects.html">项目</a></li>
+        <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 主内容 -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- 个人简介区 -->
+      <div class="profile-card">
+        <img class="profile-avatar" src="微信图片_2026-06-27_163210_273.jpg" alt="戴倬莹">
+        <div class="profile-info">
+          <h2>戴倬莹</h2>
+          <p class="bio" id="typed-text">深圳大学计算机科学与技术专业本科生，主攻前端开发与 AI 应用方向。热爱技术，喜欢探索前端工程化与大模型应用的交汇点，在课内外项目中积累了 Vue 3 全栈、跨端开发和 AI Agent 构建的实战经验。始终相信好的代码既要有严谨的逻辑，也要有温暖的人情味。</p>
+        </div>
+      </div>
+
+      <!-- 最新3篇博客 -->
+      <h3 class="section-label">最新文章</h3>
+      <div id="latest-posts" class="card-grid card-grid-3"></div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2026 戴倬莹 &middot; Powered by HTML5 &amp; CSS3 &amp; JavaScript
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // 渲染最新3篇博客
+    (function () {
+      var container = document.getElementById("latest-posts");
+      var latest = blogPosts.slice(0, 3);
+      var html = "";
+      latest.forEach(function (post) {
+        html +=
+          '<a href="article.html?id=' + post.id + '" class="card">' +
+            '<div class="card-body">' +
+              '<span class="card-tag">' + post.category + '</span>' +
+              '<h3 class="card-title">' + post.title + '</h3>' +
+              '<div class="card-meta">' + post.date + '</div>' +
+              '<p class="card-summary">' + post.summary + '</p>' +
+            '</div>' +
+          '</a>';
+      });
+      container.innerHTML = html;
+    })();
+  </script>
+</body>
+</html>

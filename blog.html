@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人技术博客 - 博客列表</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><a href="index.html">✎ 个人博客</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="blog.html">博客</a></li>
+        <li><a href="about.html">关于</a></li>
+        <li><a href="projects.html">项目</a></li>
+        <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="page-header">
+        <h1>博客文章</h1>
+        <p>记录技术成长与学习心得</p>
+      </div>
+
+      <!-- 标签筛选 -->
+      <div id="tag-filter" class="tag-filter"></div>
+
+      <!-- 博客列表 -->
+      <div id="blog-list" class="card-grid card-grid-2"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    &copy; 2026 戴倬莹 &middot; Powered by HTML5 &amp; CSS3 &amp; JavaScript
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人技术博客 - 关于我</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo"><a href="index.html">✎ 个人博客</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="blog.html">博客</a></li>
+          <li><a href="about.html">关于</a></li>
+          <li><a href="projects.html">项目</a></li>
+          <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <div class="container">
+        <div class="page-header">
+          <h1>关于我</h1>
+          <p>了解更多关于我的信息</p>
+        </div>
+
+        <!-- 个人介绍 -->
+        <div class="about-intro">
+          <p>
+            你好！我是戴倬莹，深圳大学计算机科学与技术专业本科生，自 2023
+            年入学以来一直保持着对技术的热爱和探索欲。主修数据结构、算法设计与分析、操作系统、计算机网络、软件工程、数据库原理以及大模型技术与开发等课程，打下了扎实的计算机科学基础。
+          </p>
+          <p>
+            在技术方向上，我专注于前端开发与 AI 应用。熟练 Vue 3 全家桶 +
+            TypeScript，具备复杂后台与 H5/小程序跨端交付能力（uni-app）；掌握
+            Vite/Webpack 构建、ESLint + Prettier 规范、Git 协作流程；后端了解
+            Node.js（Express）与 RESTful API 设计；数据库方面熟练 MySQL
+            表设计与查询优化；此外还具备大模型应用实战经验，熟悉 Function
+            Calling 工具调用、Agent 任务编排、Prompt Engineering 与 RAG
+            检索增强生成。
+          </p>
+          <p>
+            校园中，我连续两年获得深圳大学本科"拔尖创新人才"奖学金（2023
+            全额学费奖、2024 奖学金），2025
+            年获评"公益之星"，并通过了大学生英语四六级。课余时间我加入校义工联助童分会，从文娱部部员成长为文娱部部长，参与社区"四点半课堂"和"星星计划"志愿活动，累计义工时
+            264 小时。这些经历让我学会了责任、沟通与团队协作。
+          </p>
+        </div>
+
+        <!-- 联系方式 -->
+        <h3 class="section-label">联系方式</h3>
+        <div class="contact-list">
+          <div class="contact-item">
+            <div class="icon">&#9993;</div>
+            <span
+              >邮箱：<a href="mailto:1209226259@qq.com"
+                >1209226259@qq.com</a
+              ></span
+            >
+          </div>
+          <div class="contact-item">
+            <div class="icon">&#9733;</div>
+            <span
+              >GitHub：<a href="https://github.com/" target="_blank"
+                >github.com/beiooooo</a
+              ></span
+            >
+          </div>
+          <div class="contact-item">
+            <div class="icon">&#9742;</div>
+            <span>其他：<a href="tel:17841939957">17841939957</a></span>
+          </div>
+        </div>
+
+        <!-- 留言板 -->
+        <div class="guestbook">
+          <h3>给我留言</h3>
+          <div class="guestbook-form">
+            <input
+              type="text"
+              id="msg-name"
+              placeholder="你的昵称"
+              maxlength="30"
+            />
+            <textarea
+              id="msg-content"
+              placeholder="说点什么..."
+              maxlength="500"
+            ></textarea>
+            <button class="btn" id="msg-submit">提交留言</button>
+          </div>
+          <div id="message-list" class="message-list">
+            <div class="empty-hint">还没有留言，来写第一条吧！</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      &copy; 2026 戴倬莹 &middot; Powered by HTML5 &amp; CSS3 &amp; JavaScript
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+  </body>
+</html>
